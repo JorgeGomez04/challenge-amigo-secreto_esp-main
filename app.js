@@ -9,9 +9,9 @@ function agregarAmigo(){
     if (listaDeAmigos == ""){ 
         alert("Porfavor ingrese un nombre");
     }
-    return;
     limpiarCaja();
     console.log(listaDeAmigos);
+    return; 
 }
 //Funcion para limpiar la caja de texto
 function limpiarCaja() {
