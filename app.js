@@ -4,13 +4,16 @@ let listaDeAmigos = [];
 
 //Funcion que AGREGA amigos a la lista
 function agregarAmigo(){
-    listaDeAmigos = document.getElementById("amigo").value;
+    let amigosEscritos = document.getElementById("amigo").value;
     
-    if (listaDeAmigos == ""){ 
+    if (amigosEscritos == ""){ 
         alert("Porfavor ingrese un nombre");
+//si el valor escrito es correcto se agrega
+    }else{
+        listaDeAmigos.push(amigosEscritos);
+        console.log(listaDeAmigos);
     }
     limpiarCaja();
-    console.log(listaDeAmigos);
     return; 
 }
 //Funcion para limpiar la caja de texto
