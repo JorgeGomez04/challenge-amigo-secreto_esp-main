@@ -16,6 +16,7 @@ function agregarAmigo(){
     limpiarCaja();
     return; 
 }
+
 //Funcion para limpiar la caja de texto
 function limpiarCaja() {
     document.getElementById("amigo").value = "";
