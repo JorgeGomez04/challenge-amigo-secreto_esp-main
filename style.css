@@ -1,11 +1,11 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
-    --color-text: #444444;
-    --color-white: #FFFFFF;
+    --color-primary: #171d5af0;
+    --color-secondary: #e8d9dd;
+    --color-tertiary: #fb4a04;
+    --color-button: #fb4a04;
+    --color-button-hover: #ff9747;
+    --color-text: #000000;
+    --color-white: #e8d9dd;
 }
 
 /* Estilos generales */
@@ -36,15 +36,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0 0;
+    padding: 10px 0 0;
 }
 
 /* Sección de entrada */
 .input-section {
     flex: 60%;
     background-color: var(--color-secondary);
-    border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
+    border: 2px solid #ff790c;
+    border-radius: 0px 0px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,16 +54,16 @@ body {
 
 /* Títulos */
 .main-title {
-    font-size: 48px;
-    font-family: "Merriweather", serif;
+    font-size: 40px;
+    font-family: "Press Start 2P", system-ui;
     font-weight: 900;
     font-style: italic;
     color: var(--color-white);
 }
 
 .section-title {
-    font-family: "Inter", serif;
-    font-size: 36px;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 17px;
     font-weight: 700;
     color: var(--color-primary);
     margin: 10px 0;
@@ -76,14 +76,14 @@ body {
     justify-content: center;
     width: 100%;
     max-width: 600px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .input-name {
     width: 100%;
     padding: 10px;
-    border: 2px solid #000;
-    border-radius: 25px 0 0 25px;
+    border: 2px solid #ff6904;
+    border-radius: 0px 0 0 0px;
     font-size: 16px;
 }
 
@@ -97,11 +97,11 @@ body {
     flex: 1;
     padding: 10px 15px;
     font-size: 16px;
-    border: 2px solid #333;
+    border: 50px solid #333;
     border-right: none;
     border-radius: 25px 0 0 25px;
     font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(48, 2, 255, 0.3);
 }
 
 /* Estilos de botón */
@@ -110,7 +110,7 @@ button {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     border: 2px solid #000;
-    border-radius: 25px;
+    border-radius: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
@@ -118,7 +118,7 @@ button {
 .button-add {
     background-color: var(--color-tertiary);
     color: var(--color-text);
-    border-radius: 0 25px 25px 0;
+    border-radius: 0 0px 0px 0;
 }
 
 .button-add:hover {
@@ -136,7 +136,7 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #ff860c;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
