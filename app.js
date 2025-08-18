@@ -9,16 +9,18 @@ function agregarAmigo(){
 
         //si el valor es nullo
         if (amigosEscritos == ""){ 
-            alert("Porfavor ingrese un nombre");
+            asignarTexto("h2", "Por favor escribre un nombre");
             
         //si el valor ya esta en la lista
         }else if (listaDeAmigos.includes(amigosEscritos)){
-            alert ("Este nombre ya esta en la lista");
-            
+            asignarTexto("h2", "Ya esta en la lista, introdusca otro nombre");
+
         //si el valor no esta en la lista se lo agrega a "listaDeAmigos"
         } else {
             listaDeAmigos.push(amigosEscritos);
+            asignarTexto("h2", "Digite el nombre de sus amigos");
         }
+        
         document.getElementById("amigo").value = "";
         mostrarLista()
         return; 
@@ -41,10 +43,19 @@ function mostrarLista(){
 //Funcion para sortear al amigo secreto
 function sortearAmigo(){
         if (listaDeAmigos.length === 0){
-            alert("La lista esta vacia, no hay nombres para sortear");
+            asignarTexto("h2", "La lista esta vacia, no hay nombres para sortear");
             return;
         }
+        
         let numeroRandom = Math.floor(Math.random() * listaDeAmigos.length);
         let amigoRandom = listaDeAmigos[numeroRandom];
         document.getElementById("resultado").innerHTML = `El amigo sorteado es.. !! ${amigoRandom} !!`;
 }
+
+
+//Funcion para agregar texto al titulo
+function asignarTexto(elemento, texto){
+    let elementoHtml = document.querySelector(elemento);
+    elementoHtml.innerHTML = texto;
+}
+
